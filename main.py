@@ -2,13 +2,13 @@ class car:
     def __init__(self,model,brand,is_moving=True):
         self.model = model
         self.brand = brand
-        # self.is_moving = is_moving
+        self.is_moving = is_moving
 
     def drive(self):
         print(f'{self.brand},{self.model} is driving')
 
-    # def apply_brake(self):
-    #     print(f"slowing down ={self.is_moving}")
+    def apply_brake(self):
+        print(f"slowing down ={self.is_moving}")
     
 
 class electriccar(car):
@@ -25,6 +25,7 @@ my_car.drive()
 ev_car= electriccar('tesla','model 3',75)
 ev_car.drive()
 ev_car.charge()
+ev_car.apply_brake()
 
 
 
