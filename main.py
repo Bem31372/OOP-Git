@@ -25,7 +25,7 @@ my_car.drive()
 ev_car= electriccar('tesla','model 3',75)
 ev_car.drive()
 ev_car.charge()
-# my_car.apply_brake()
+
 
 
 
